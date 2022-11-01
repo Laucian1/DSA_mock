@@ -17,10 +17,10 @@ function combineMonthlyRainfallTotals(firstMonthTotals, secondMonthTotals) {
     if (compare.includes(cityName)) {
       chosenCity = endResult.find(cityObject => cityObject.city === cityName)
       chosenCity.rainfall += cityInQuestion.rainfall
-      console.log("Chosen City", chosenCity)
+    //  console.log("Chosen City", chosenCity)
     } else {
       endResult.push(cityInQuestion)
-      console.log("Additional city", endResult)
+    //  console.log("Additional city", endResult)
     }
     
   })
